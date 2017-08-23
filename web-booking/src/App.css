@@ -1,24 +1,80 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
+html {
+  height: 100%; }
+  html body {
+    height: inherit; }
+    @media screen and (min-width: 1200px) {
+      html body {
+        width: 1200px;
+        margin-left: calc(50% - 600px);
+        position: relative; } }
+    html body #root {
+      height: inherit; }
+      html body #root .App {
+        width: 100%;
+        height: inherit; }
+        html body #root .App .main-nav {
+          position: relative;
+          -webkit-box-shadow: inset 0 -1px 0 0 white;
+          -moz-box-shadow: inset 0 -1px 0 0 white;
+          box-shadow: inset 0 -1px 0 0 white; }
+          html body #root .App .main-nav ._3Tmun {
+            font-size: 1.3rem;
+            margin-left: 6px;
+            margin-top: 17px; }
+          html body #root .App .main-nav nav {
+            margin-right: 100px; }
+            html body #root .App .main-nav nav a {
+              color: white !important;
+              text-decoration: none;
+              margin-left: 25px;
+              line-height: 64px; }
+              html body #root .App .main-nav nav a span {
+                margin-right: 6px; }
+              html body #root .App .main-nav nav a abbr {
+                text-transform: none;
+                font-size: .9rem; }
+        html body #root .App .main-content {
+          height: calc(100% - 64px); }
+          @media screen and (min-width: 1200px) {
+            html body #root .App .main-content {
+              -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+              -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1); } }
+          html body #root .App .main-content .content-header {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background: url(./styles/images/header3.jpg) no-repeat center center;
+            background-attachment: scroll;
+            background-size: cover; }
+            html body #root .App .main-content .content-header::after {
+              content: "";
+              position: absolute;
+              left: 0px;
+              right: 0px;
+              bottom: -5px;
+              width: 100%;
+              height: 5px;
+              pointer-events: none;
+              opacity: 1;
+              box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+              will-change: opacity;
+              transition: opacity 0.4s; }
+            html body #root .App .main-content .content-header > span {
+              line-height: 200px;
+              margin-left: 50px;
+              color: white;
+              font-size: 5rem;
+              font-weight: bold;
+              text-shadow: 1px 1px 0 black; }
+            html body #root .App .main-content .content-header .main-menu-button {
+              position: absolute;
+              right: 20px;
+              bottom: -28px;
+              z-index: 1; }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

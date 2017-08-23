@@ -1,0 +1,90 @@
+@import "global";
+html {
+    height: 100%;
+    body {
+        height: inherit;
+        @include lg {
+            width: 1200px;
+            margin-left: calc(50% - 600px);
+            position: relative;
+        }
+        #root {
+            height: inherit;
+            .App {
+                width: 100%;
+                height: inherit;
+                .main-nav {
+                    // color: #00A46C;
+                    // background-color: #3f51b5 !important;
+                    position: relative;
+                    @include boxShadow(inset 0 -1px 0 0 white);
+                    //title
+                    ._3Tmun {
+                        font-size: 1.3rem;
+                        margin-left: 6px;
+                        margin-top: 17px;
+                    }
+                    nav {
+                        margin-right: 100px;
+                        a {
+                            color: white !important;
+                            text-decoration: none;
+                            margin-left: 25px;
+                            line-height: 64px;
+                            span {
+                                margin-right: 6px;
+                            }
+                            abbr {
+                                text-transform: none;
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+                .main-content {
+                    // background-color: #f5f5f5;
+                    // background: url(./styles/images/header.jpg) repeat top left;
+                    // background-attachment: scroll;
+                    height: calc(100% - 64px);
+                    @include lg {
+                        // border-left: 1px solid rgba(black, .15);
+                        // border-right: 1px solid rgba(black, .15);
+                        @include boxShadow(0px 0px 1px 1px rgba(0, 0, 0, 0.1));
+                    }
+                    .content-header {
+                        position: relative;
+                        width: 100%;
+                        height: 200px;
+                        background: url(./styles/images/header3.jpg) no-repeat center center;
+                        background-attachment: scroll;
+                        background-size: cover;
+                        @include afterShadow;
+                        &>span {
+                            line-height: 200px;
+                            margin-left: 50px;
+                            color: white;
+                            font-size: 5rem;
+                            font-weight: bold;
+                            @include textShadow(1);
+                        }
+                        .main-menu-button {
+                            position: absolute;
+                            right: 20px;
+                            bottom: -28px;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
