@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PageLayout from './PageLayout';
 // import PropTypes from 'prop-types';
 
 class Historico extends Component {
@@ -9,7 +10,9 @@ class Historico extends Component {
 
   render() {
     return (
-      <div>Historico</div>
+      <PageLayout className="historico-container" title="Histórico de reservas">
+        Conteudo show
+      </PageLayout>
     );
   }
 }

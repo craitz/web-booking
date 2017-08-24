@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PageLayout from './PageLayout';
 // import PropTypes from 'prop-types';
 
 class Reservas extends Component {
@@ -9,7 +10,9 @@ class Reservas extends Component {
 
   render() {
     return (
-      <div>Reservas</div>
+      <PageLayout className="reservas-container" title="Faça sua reserva">
+        Conteudo show
+      </PageLayout>
     );
   }
 }

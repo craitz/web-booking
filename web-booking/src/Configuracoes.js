@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PageLayout from './PageLayout';
 // import PropTypes from 'prop-types';
 
 class Configuracoes extends Component {
@@ -9,7 +10,9 @@ class Configuracoes extends Component {
 
   render() {
     return (
-      <div>Configuracoes</div>
+      <PageLayout className="configuracoes-container" title="Configurações">
+        Conteudo show
+      </PageLayout>
     );
   }
 }
