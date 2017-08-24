@@ -5,7 +5,7 @@ html {
     body {
         height: inherit;
         font-size: 14px;
-        font-family: "Roboto";
+        font-family: "Times New Roman" !important;
         margin: 0;
         #root {
             height: inherit;
@@ -16,8 +16,4 @@ html {
             }
         }
     }
-}
-
-.material-icons {
-    font-size: 18px !important;
 }

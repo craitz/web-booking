@@ -3,7 +3,7 @@ html {
   html body {
     height: inherit;
     font-size: 14px;
-    font-family: "Roboto";
+    font-family: "Times New Roman" !important;
     margin: 0; }
     html body #root {
       height: inherit; }
@@ -113,8 +113,6 @@ html {
           html body #root .App .menu-frame li {
             padding-left: 12px; }
           html body #root .App .menu-frame .material-icons {
-            font-size: 24px !important;
-            margin-top: 8px;
             margin-left: 9px; }
         html body #root .App .main-content {
           position: relative;
@@ -147,6 +145,3 @@ html {
               font-size: 5rem;
               font-weight: bold;
               text-shadow: 1px 1px 0 black; }
-
-.material-icons {
-  font-size: 18px !important; }
