@@ -1,86 +1,93 @@
 @mixin layout {
-    .main-nav {
-        position: relative;
-        padding-left: 20px;
-        @include afterShadow;
-        @include xxs {
-            padding-left: 35px;
-        }
-        //title-button
-        ._3xRDd._1T6gd._3ViU3._1kgaQ.HDVfX span {
-            font-size: 1.8rem !important;
+    [data-react-toolbox="panel"] {
+        height: 100%;
+        .main-nav {
+            background-color: #3F51B5;
+            position: relative;
+            padding-left: 20px;
+            @include afterShadow;
             @include xxs {
-                font-size: 2rem !important;
+                padding-left: 35px;
             }
-        }
-        //title
-        ._3Tmun {
-            font-size: 1.2rem;
-            margin-top: 17px;
-            margin-left: 6px;
-            @include xxs {
-                font-size: 1.2rem !important;
-                margin-top: 18px;
-                margin-left: 10px;
-            }
-        }
-        .main-menu-button {
-            position: absolute;
-            right: 0;
-            bottom: -28px;
-            z-index: 1;
-            @include lg {
-                display: none;
-            }
-        }
-        nav {
-            &.nav-settings {
-                display: none;
-                @include lg {
-                    display: initial;
+            //title-button
+            ._3xRDd._1T6gd._3ViU3._1kgaQ.HDVfX span {
+                font-size: 1.8rem !important;
+                @include xxs {
+                    font-size: 2rem !important;
                 }
-                margin-right: 80px;
-                @include lg {
-                    margin-right: 0;
+            }
+            //title
+            ._3Tmun {
+                font-size: 1.2rem;
+                margin-top: 17px;
+                margin-left: 6px;
+                @include xxs {
+                    font-size: 1.2rem !important;
+                    margin-top: 18px;
+                    margin-left: 10px;
                 }
-                a {
-                    span {}
-                    abbr {
-                        display: none;
-                        @include lg {
-                            display: initial;
+            }
+            .main-menu-button {
+                position: absolute;
+                right: 0;
+                bottom: -28px;
+                z-index: 1;
+                @include lg {
+                    display: none;
+                }
+            }
+            nav {
+                &.nav-settings {
+                    display: none;
+                    @include lg {
+                        display: initial;
+                    }
+                    margin-right: 80px;
+                    @include lg {
+                        margin-right: 0;
+                    }
+                    a {
+                        span {}
+                        abbr {
+                            display: none;
+                            @include lg {
+                                display: initial;
+                            }
                         }
                     }
                 }
-            }
-            &.nav-options {
-                margin-right: 80px;
-                display: none;
-                @include smTablet {
-                    display: initial;
-                }
-                a {
-                    span {}
-                    abbr {
-                        display: none;
-                        @include lgTablet {
-                            display: initial;
+                &.nav-options {
+                    margin-right: 80px;
+                    display: none;
+                    @include smTablet {
+                        display: initial;
+                    }
+                    a {
+                        span {}
+                        abbr {
+                            display: none;
+                            @include lgTablet {
+                                display: initial;
+                            }
                         }
                     }
                 }
-            }
-            a {
-                color: white !important;
-                text-decoration: none;
-                margin-left: 25px;
-                line-height: 64px;
-                span {
-                    margin-right: 6px;
+                a {
+                    color: white !important;
+                    text-decoration: none;
+                    margin-left: 25px;
+                    line-height: 64px;
+                    span {
+                        margin-right: 6px;
+                    }
+                    abbr {
+                        text-transform: none;
+                    }
                 }
-                abbr {
-                    text-transform: none;
-                }
             }
+        }
+        .main-content {
+            height: calc(100% - 64px);
         }
     }
     .user-frame {
@@ -122,28 +129,6 @@
             // font-size: 24px !important;
             // margin-top: 8px;
             margin-left: 9px;
-        }
-    }
-    .main-content {
-        position: relative;
-        overflow: hidden;
-        height: calc(100% - 64px);
-        .content-header {
-            position: relative;
-            width: 100%;
-            height: 200px;
-            background: url(./styles/images/header3.jpg) no-repeat center center;
-            background-attachment: scroll;
-            background-size: cover;
-            @include afterShadow;
-            &>span {
-                line-height: 200px;
-                margin-left: 50px;
-                color: white;
-                font-size: 5rem;
-                font-weight: bold;
-                @include textShadow(1);
-            }
         }
     }
 }

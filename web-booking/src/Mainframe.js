@@ -208,7 +208,7 @@ class Mainframe extends React.Component {
               <Link href="http://" label="Sair" icon="power_settings_new" />
             </Navigation>
           </AppBar>
-          <div style={{ flex: 1, overflowY: 'auto', padding: '1.8rem' }}>
+          <div className="main-content">
             {this.props.children}
           </div>
         </Panel>

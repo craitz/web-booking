@@ -1,53 +1,55 @@
 {
-  "name": "web-booking",
-  "version": "0.1.0",
-  "private": true,
-  "reactToolbox": {
-    "include": [
-      "BUTTON",
-      "DATE_PICKER",
-      "PROGRESS_BAR",
-      "INPUT",
-      "SNACKBAR",
-      "TABS",
-      "MENU",
-      "DROPDOWN",
-      "CHECKBOX",
-      "TABLE",
-      "APP_BAR",
-      "NAVIGATION",
-      "LINK",
-      "LAYOUT",
-      "AVATAR",
-      "LIST"
-    ],
-    "customProperties": {
-      "animation-duration": "0.3s",
-      "snackbar-background-color": "rgba(0,0,0,.8)",
-      "snackbar-border-radius": "4px"
+    "name": "web-booking",
+    "version": "0.1.0",
+    "private": true,
+    "reactToolbox": {
+        "include": [
+            "BUTTON",
+            "DATE_PICKER",
+            "PROGRESS_BAR",
+            "INPUT",
+            "SNACKBAR",
+            "TABS",
+            "MENU",
+            "DROPDOWN",
+            "CHECKBOX",
+            "TABLE",
+            "APP_BAR",
+            "NAVIGATION",
+            "LINK",
+            "LAYOUT",
+            "AVATAR",
+            "LIST"
+        ],
+        "customProperties": {
+            "color-primary": "#3F51B5",
+            "color-accent": "#FF4081",
+            "animation-duration": "0.3s",
+            "snackbar-background-color": "rgba(0,0,0,.8)",
+            "snackbar-border-radius": "4px"
+        },
+        "output": "src/styles/react-toolbox"
     },
-    "output": "src/styles/react-toolbox"
-  },
-  "dependencies": {
-    "material-design-icons": "^3.0.1",
-    "muicss": "^0.9.22",
-    "node-sass-chokidar": "0.0.3",
-    "npm-run-all": "^4.0.2",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.11",
-    "react-toolbox": "^2.0.0-beta.12",
-    "react-toolbox-themr": "^1.0.2"
-  },
-  "scripts": {
-    "build-css": "node-sass-chokidar src/styles/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/styles/ -o src/ --watch --recursive",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "toolbox": "react-toolbox-themr"
-  }
+    "dependencies": {
+        "material-design-icons": "^3.0.1",
+        "muicss": "^0.9.22",
+        "node-sass-chokidar": "0.0.3",
+        "npm-run-all": "^4.0.2",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "react-router-dom": "^4.1.2",
+        "react-scripts": "1.0.11",
+        "react-toolbox": "^2.0.0-beta.12",
+        "react-toolbox-themr": "^1.0.2"
+    },
+    "scripts": {
+        "build-css": "node-sass-chokidar src/styles/ -o src/",
+        "watch-css": "npm run build-css && node-sass-chokidar src/styles/ -o src/ --watch --recursive",
+        "start-js": "react-scripts start",
+        "start": "npm-run-all -p watch-css start-js",
+        "build": "npm run build-css && react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "toolbox": "react-toolbox-themr"
+    }
 }

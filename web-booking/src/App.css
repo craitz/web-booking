@@ -1,3 +1,79 @@
+.home-container {
+  height: 100%; }
+  .home-container .page-header {
+    height: 128px;
+    border-bottom: 3px solid rgba(158, 158, 158, 0.2);
+    margin: 0; }
+    .home-container .page-header span {
+      line-height: 128px;
+      margin-left: 30px;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #5C6BC0; }
+  .home-container .page-content {
+    height: calc(100% - 128px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+
+.reservas-container {
+  height: 100%; }
+  .reservas-container .page-header {
+    height: 128px;
+    border-bottom: 3px solid rgba(158, 158, 158, 0.2);
+    margin: 0; }
+    .reservas-container .page-header span {
+      line-height: 128px;
+      margin-left: 30px;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #5C6BC0; }
+  .reservas-container .page-content {
+    height: calc(100% - 128px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+
+.historico-container {
+  height: 100%; }
+  .historico-container .page-header {
+    height: 128px;
+    border-bottom: 3px solid rgba(158, 158, 158, 0.2);
+    margin: 0; }
+    .historico-container .page-header span {
+      line-height: 128px;
+      margin-left: 30px;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #5C6BC0; }
+  .historico-container .page-content {
+    height: calc(100% - 128px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+
+.configuracoes-container {
+  height: 100%; }
+  .configuracoes-container .page-header {
+    height: 128px;
+    border-bottom: 3px solid rgba(158, 158, 158, 0.2);
+    margin: 0; }
+    .configuracoes-container .page-header span {
+      line-height: 128px;
+      margin-left: 30px;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #5C6BC0; }
+  .configuracoes-container .page-content {
+    height: calc(100% - 128px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+
 html {
   height: 100%; }
   html body {
@@ -10,81 +86,86 @@ html {
       html body #root .App {
         width: 100%;
         height: inherit; }
-        html body #root .App .main-nav {
-          position: relative;
-          padding-left: 20px; }
-          html body #root .App .main-nav::after {
-            content: "";
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            bottom: -5px;
-            width: 100%;
-            height: 5px;
-            pointer-events: none;
-            opacity: 1;
-            box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.1);
-            will-change: opacity;
-            transition: opacity 0.4s; }
-          @media screen and (min-width: 480px) {
-            html body #root .App .main-nav {
-              padding-left: 35px; } }
-          html body #root .App .main-nav ._3xRDd._1T6gd._3ViU3._1kgaQ.HDVfX span {
-            font-size: 1.8rem !important; }
+        html body #root .App [data-react-toolbox="panel"] {
+          height: 100%; }
+          html body #root .App [data-react-toolbox="panel"] .main-nav {
+            background-color: #3F51B5;
+            position: relative;
+            padding-left: 20px; }
+            html body #root .App [data-react-toolbox="panel"] .main-nav::after {
+              content: "";
+              position: absolute;
+              left: 0px;
+              right: 0px;
+              bottom: -5px;
+              width: 100%;
+              height: 5px;
+              pointer-events: none;
+              opacity: 1;
+              box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.1);
+              will-change: opacity;
+              transition: opacity 0.4s; }
             @media screen and (min-width: 480px) {
-              html body #root .App .main-nav ._3xRDd._1T6gd._3ViU3._1kgaQ.HDVfX span {
-                font-size: 2rem !important; } }
-          html body #root .App .main-nav ._3Tmun {
-            font-size: 1.2rem;
-            margin-top: 17px;
-            margin-left: 6px; }
-            @media screen and (min-width: 480px) {
-              html body #root .App .main-nav ._3Tmun {
-                font-size: 1.2rem !important;
-                margin-top: 18px;
-                margin-left: 10px; } }
-          html body #root .App .main-nav .main-menu-button {
-            position: absolute;
-            right: 0;
-            bottom: -28px;
-            z-index: 1; }
-            @media screen and (min-width: 1280px) {
-              html body #root .App .main-nav .main-menu-button {
-                display: none; } }
-          html body #root .App .main-nav nav.nav-settings {
-            display: none;
-            margin-right: 80px; }
-            @media screen and (min-width: 1280px) {
-              html body #root .App .main-nav nav.nav-settings {
-                display: initial; } }
-            @media screen and (min-width: 1280px) {
-              html body #root .App .main-nav nav.nav-settings {
-                margin-right: 0; } }
-            html body #root .App .main-nav nav.nav-settings a abbr {
-              display: none; }
+              html body #root .App [data-react-toolbox="panel"] .main-nav {
+                padding-left: 35px; } }
+            html body #root .App [data-react-toolbox="panel"] .main-nav ._3xRDd._1T6gd._3ViU3._1kgaQ.HDVfX span {
+              font-size: 1.8rem !important; }
+              @media screen and (min-width: 480px) {
+                html body #root .App [data-react-toolbox="panel"] .main-nav ._3xRDd._1T6gd._3ViU3._1kgaQ.HDVfX span {
+                  font-size: 2rem !important; } }
+            html body #root .App [data-react-toolbox="panel"] .main-nav ._3Tmun {
+              font-size: 1.2rem;
+              margin-top: 17px;
+              margin-left: 6px; }
+              @media screen and (min-width: 480px) {
+                html body #root .App [data-react-toolbox="panel"] .main-nav ._3Tmun {
+                  font-size: 1.2rem !important;
+                  margin-top: 18px;
+                  margin-left: 10px; } }
+            html body #root .App [data-react-toolbox="panel"] .main-nav .main-menu-button {
+              position: absolute;
+              right: 0;
+              bottom: -28px;
+              z-index: 1; }
               @media screen and (min-width: 1280px) {
-                html body #root .App .main-nav nav.nav-settings a abbr {
+                html body #root .App [data-react-toolbox="panel"] .main-nav .main-menu-button {
+                  display: none; } }
+            html body #root .App [data-react-toolbox="panel"] .main-nav nav.nav-settings {
+              display: none;
+              margin-right: 80px; }
+              @media screen and (min-width: 1280px) {
+                html body #root .App [data-react-toolbox="panel"] .main-nav nav.nav-settings {
                   display: initial; } }
-          html body #root .App .main-nav nav.nav-options {
-            margin-right: 80px;
-            display: none; }
-            @media screen and (min-width: 720px) {
-              html body #root .App .main-nav nav.nav-options {
-                display: initial; } }
-            html body #root .App .main-nav nav.nav-options a abbr {
+              @media screen and (min-width: 1280px) {
+                html body #root .App [data-react-toolbox="panel"] .main-nav nav.nav-settings {
+                  margin-right: 0; } }
+              html body #root .App [data-react-toolbox="panel"] .main-nav nav.nav-settings a abbr {
+                display: none; }
+                @media screen and (min-width: 1280px) {
+                  html body #root .App [data-react-toolbox="panel"] .main-nav nav.nav-settings a abbr {
+                    display: initial; } }
+            html body #root .App [data-react-toolbox="panel"] .main-nav nav.nav-options {
+              margin-right: 80px;
               display: none; }
-              @media screen and (min-width: 1024px) {
-                html body #root .App .main-nav nav.nav-options a abbr {
+              @media screen and (min-width: 720px) {
+                html body #root .App [data-react-toolbox="panel"] .main-nav nav.nav-options {
                   display: initial; } }
-          html body #root .App .main-nav nav a {
-            color: white !important;
-            text-decoration: none;
-            margin-left: 25px;
-            line-height: 64px; }
-            html body #root .App .main-nav nav a span {
-              margin-right: 6px; }
-            html body #root .App .main-nav nav a abbr {
-              text-transform: none; }
+              html body #root .App [data-react-toolbox="panel"] .main-nav nav.nav-options a abbr {
+                display: none; }
+                @media screen and (min-width: 1024px) {
+                  html body #root .App [data-react-toolbox="panel"] .main-nav nav.nav-options a abbr {
+                    display: initial; } }
+            html body #root .App [data-react-toolbox="panel"] .main-nav nav a {
+              color: white !important;
+              text-decoration: none;
+              margin-left: 25px;
+              line-height: 64px; }
+              html body #root .App [data-react-toolbox="panel"] .main-nav nav a span {
+                margin-right: 6px; }
+              html body #root .App [data-react-toolbox="panel"] .main-nav nav a abbr {
+                text-transform: none; }
+          html body #root .App [data-react-toolbox="panel"] .main-content {
+            height: calc(100% - 64px); }
         html body #root .App .user-frame {
           width: 100%;
           height: 312px;
@@ -114,34 +195,3 @@ html {
             padding-left: 12px; }
           html body #root .App .menu-frame .material-icons {
             margin-left: 9px; }
-        html body #root .App .main-content {
-          position: relative;
-          overflow: hidden;
-          height: calc(100% - 64px); }
-          html body #root .App .main-content .content-header {
-            position: relative;
-            width: 100%;
-            height: 200px;
-            background: url(./styles/images/header3.jpg) no-repeat center center;
-            background-attachment: scroll;
-            background-size: cover; }
-            html body #root .App .main-content .content-header::after {
-              content: "";
-              position: absolute;
-              left: 0px;
-              right: 0px;
-              bottom: -5px;
-              width: 100%;
-              height: 5px;
-              pointer-events: none;
-              opacity: 1;
-              box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.1);
-              will-change: opacity;
-              transition: opacity 0.4s; }
-            html body #root .App .main-content .content-header > span {
-              line-height: 200px;
-              margin-left: 50px;
-              color: white;
-              font-size: 5rem;
-              font-weight: bold;
-              text-shadow: 1px 1px 0 black; }
