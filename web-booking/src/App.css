@@ -1,12 +1,10 @@
 html {
   height: 100%; }
   html body {
-    height: inherit; }
-    @media screen and (min-width: 1200px) {
-      html body {
-        width: 1200px;
-        margin-left: calc(50% - 600px);
-        position: relative; } }
+    height: inherit;
+    font-size: 14px;
+    font-family: "Roboto";
+    margin: 0; }
     html body #root {
       height: inherit; }
       html body #root .App {
@@ -14,32 +12,114 @@ html {
         height: inherit; }
         html body #root .App .main-nav {
           position: relative;
-          -webkit-box-shadow: inset 0 -1px 0 0 white;
-          -moz-box-shadow: inset 0 -1px 0 0 white;
-          box-shadow: inset 0 -1px 0 0 white; }
+          padding-left: 20px; }
+          html body #root .App .main-nav::after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: -5px;
+            width: 100%;
+            height: 5px;
+            pointer-events: none;
+            opacity: 1;
+            box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.1);
+            will-change: opacity;
+            transition: opacity 0.4s; }
+          @media screen and (min-width: 480px) {
+            html body #root .App .main-nav {
+              padding-left: 35px; } }
+          html body #root .App .main-nav ._3xRDd._1T6gd._3ViU3._1kgaQ.HDVfX span {
+            font-size: 1.8rem !important; }
+            @media screen and (min-width: 480px) {
+              html body #root .App .main-nav ._3xRDd._1T6gd._3ViU3._1kgaQ.HDVfX span {
+                font-size: 2rem !important; } }
           html body #root .App .main-nav ._3Tmun {
-            font-size: 1.3rem;
-            margin-left: 6px;
-            margin-top: 17px; }
-          html body #root .App .main-nav nav {
-            margin-right: 100px; }
-            html body #root .App .main-nav nav a {
-              color: white !important;
-              text-decoration: none;
-              margin-left: 25px;
-              line-height: 64px; }
-              html body #root .App .main-nav nav a span {
-                margin-right: 6px; }
-              html body #root .App .main-nav nav a abbr {
-                text-transform: none;
-                font-size: .9rem; }
+            font-size: 1.2rem;
+            margin-top: 17px;
+            margin-left: 6px; }
+            @media screen and (min-width: 480px) {
+              html body #root .App .main-nav ._3Tmun {
+                font-size: 1.2rem !important;
+                margin-top: 18px;
+                margin-left: 10px; } }
+          html body #root .App .main-nav .main-menu-button {
+            position: absolute;
+            right: 0;
+            bottom: -28px;
+            z-index: 1; }
+            @media screen and (min-width: 1280px) {
+              html body #root .App .main-nav .main-menu-button {
+                display: none; } }
+          html body #root .App .main-nav nav.nav-settings {
+            display: none;
+            margin-right: 80px; }
+            @media screen and (min-width: 1280px) {
+              html body #root .App .main-nav nav.nav-settings {
+                display: initial; } }
+            @media screen and (min-width: 1280px) {
+              html body #root .App .main-nav nav.nav-settings {
+                margin-right: 0; } }
+            html body #root .App .main-nav nav.nav-settings a abbr {
+              display: none; }
+              @media screen and (min-width: 1280px) {
+                html body #root .App .main-nav nav.nav-settings a abbr {
+                  display: initial; } }
+          html body #root .App .main-nav nav.nav-options {
+            margin-right: 80px;
+            display: none; }
+            @media screen and (min-width: 720px) {
+              html body #root .App .main-nav nav.nav-options {
+                display: initial; } }
+            html body #root .App .main-nav nav.nav-options a abbr {
+              display: none; }
+              @media screen and (min-width: 1024px) {
+                html body #root .App .main-nav nav.nav-options a abbr {
+                  display: initial; } }
+          html body #root .App .main-nav nav a {
+            color: white !important;
+            text-decoration: none;
+            margin-left: 25px;
+            line-height: 64px; }
+            html body #root .App .main-nav nav a span {
+              margin-right: 6px; }
+            html body #root .App .main-nav nav a abbr {
+              text-transform: none; }
+        html body #root .App .user-frame {
+          width: 100%;
+          height: 312px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center; }
+          html body #root .App .user-frame .user-avatar {
+            width: 140px;
+            height: 140px; }
+          html body #root .App .user-frame .user-name {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: bold; }
+          html body #root .App .user-frame button {
+            margin-top: 20px; }
+          html body #root .App .user-frame .button-left {
+            margin-right: 10px; }
+        html body #root .App .menu-frame {
+          width: 100%;
+          height: calc(100% - 312px);
+          position: relative; }
+          html body #root .App .menu-frame [data-react-toolbox="font-icon"] {
+            margin-left: 8px; }
+          html body #root .App .menu-frame li {
+            padding-left: 12px; }
+          html body #root .App .menu-frame .material-icons {
+            font-size: 24px !important;
+            margin-top: 8px;
+            margin-left: 9px; }
         html body #root .App .main-content {
+          position: relative;
+          overflow: hidden;
           height: calc(100% - 64px); }
-          @media screen and (min-width: 1200px) {
-            html body #root .App .main-content {
-              -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-              -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-              box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1); } }
           html body #root .App .main-content .content-header {
             position: relative;
             width: 100%;
@@ -57,7 +137,7 @@ html {
               height: 5px;
               pointer-events: none;
               opacity: 1;
-              box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+              box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.1);
               will-change: opacity;
               transition: opacity 0.4s; }
             html body #root .App .main-content .content-header > span {
@@ -67,14 +147,6 @@ html {
               font-size: 5rem;
               font-weight: bold;
               text-shadow: 1px 1px 0 black; }
-            html body #root .App .main-content .content-header .main-menu-button {
-              position: absolute;
-              right: 20px;
-              bottom: -28px;
-              z-index: 1; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.material-icons {
+  font-size: 18px !important; }
